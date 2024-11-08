@@ -1,0 +1,159 @@
+.parte-arriba {
+    display: flex; 
+    align-items: flex-end; 
+    margin-bottom: 20px;
+    justify-content: end;
+}
+
+.campo-proveedor {
+    margin-bottom: 20px;
+    display: flex;
+} 
+
+.campo-proveedor label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.campo-proveedor input {
+    width: 150px;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 20px;
+    text-align: center;
+}
+
+td{
+    text-align: center;
+}
+
+input {
+    width: 80%;
+    text-align: center;
+}
+
+.btn-agregar {
+    margin-bottom: 20px;
+}
+
+.btn-eliminar {
+    background-color: #eb6464;
+    color: rgb(231, 231, 231);
+}
+
+.btn-eliminar:hover{
+    background-color: #c04e4e;
+    color: azure;
+}
+
+.campo-total, .campo-metodo-pago, .campo-descuento, .campo-subtotal {
+    display: flex;
+    align-items: center;
+}
+
+.campo-total label, .campo-metodo-pago label, .campo-descuento label, .campo-subtotal label, .campo-nota label {
+    margin-right: 10px;
+}   
+
+.campo-nota {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.campo-nota textarea {
+    width: 400px;
+    padding: 10px;
+}   
+
+.campo-buscar-producto {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.campo-buscar-producto i.fa-search {
+    position: absolute;
+    top: 245px;
+    font-size: 24px; 
+    color: #815E5B; 
+}
+
+.campo-buscar-producto input {
+    margin-left: 35px;
+    margin-right: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#btn-agregar-producto {
+    width: 100px;
+    padding: 10px;
+    background-color: #815E5B;
+    color: white;
+}
+
+#btn-agregar-producto:hover {
+    background-color: #685155;
+}
+
+#form-compra {
+    display: flex;
+}
+
+.seccion-productos {
+    width: 60%; 
+}
+
+.campo-total-derecha {
+    width: 35%; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-left: 50px;
+    
+}
+
+.campo-total-derecha input,
+.campo-total-derecha select,
+.campo-total-derecha textarea {
+    margin-left: 35px;
+    width: 75%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+
+@media (max-width: 1024px) {
+    #form-compra {
+        flex-direction: column; 
+    }
+
+    .seccion-productos {
+        width: 100%;
+    }
+
+    .campo-total-derecha {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px; 
+    }
+}

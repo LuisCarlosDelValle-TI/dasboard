@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar proveedor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="index.html">
+                <li><i class="fa fa-home"></i>Inicio</li>
+            </a>
+            <a href="clientes.html">
+                <li><i class="fa fa-address-book"></i>Clientes</li>
+            </a>
+            <a href="productos.html">
+                <li><i class="fa fa-cube"></i>Productos</li>
+            </a>
+            <a href="usuarios.html">
+                <li><i class="fa fa-users"></i>Usuarios</li>
+            </a>
+            <a href="proveedores.html">
+                <li class="activo"><i class="fa fa-truck"></i>Proveedores</li>
+            </a>
+            <a href="categorias.html">
+                <li><i class="fa fa-tags"></i>Categorías</li>
+            </a>
+            <a href="empleado.html">
+                <li><i class="fa fa-id-badge"></i>Empleado</li>
+            </a>
+            <a href="compras.html">
+                <li><i class="fa fa-shopping-basket"></i>Compras</li>
+            </a>
+            <a href="ventas.html">
+                <li><i class="fa fa-credit-card"></i>Ventas</li>
+            </a>
+            <a href="login.html">
+                <li><i class="fa fa-sign-out"></i>Cerrar sesión</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="contenido">
+        <div class="barra-user">
+            <div class="user-info">
+                <p>Juanito2014</p>
+                <i class="fa fa-user-circle-o" id="icono-usuario-activo"></i>
+            </div>
+        </div>
+        <div class="parte-superior">
+            <a href="proveedores.html" class="btn-regresar">
+                <i class="fa fa-arrow-left"></i>
+            </a>
+        </div>
+        <h1>Proveedor</h1>
+        
+        <div class="btn-editar-campos">
+            <button type="button" id="btn-editar" class="btn-editar"><i class="fa fa-pencil"></i> Editar</button>
+        </div>
+        
+        <form action="#" method="post" id="form-proveedor">
+            <div class="campos-registro">
+                <label for="razon-social">Razón Social:</label>
+                <input type="text" id="razon-social" name="razon-social" required disabled>
+
+                <label for="contacto">Teléfono de contacto:</label>
+                <input type="tel" id="contacto" name="contacto" pattern="[0-9]{10}" maxlength="10" placeholder="10 dígitos" required disabled>
+
+                <label for="pais">Páis:</label>
+                <input type="text" id="pais" name="pais" maxlength="40" required disabled>
+                <br>
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" maxlength="40" required disabled>
+                <br>
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" maxlength="40" required disabled>
+                <br>
+                <label for="cp">Código postal:</label>
+                <input type="number" id="cp" name="cp" maxlength="40" required disabled>
+                <br>
+                <label for="tipo-proveedor">Tipo de proveedor:</label>
+                <select name="tipo-proveedor" id="tipo-proveedor" required disabled>
+                    <option value="">Selecciona una opción</option>
+                    <option value="fisica">Persona Física</option>
+                    <option value="moral">Persona Moral</option>
+                </select> <br>
+                <button type="submit" class="guardar" id="guardar">Guardar</button>
+
+        </form>
+    </div>
+</body>
+</html>

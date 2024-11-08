@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de nuevo producto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="index.html">
+                <li><i class="fa fa-home"></i>Inicio</li>
+            </a>
+            <a href="clientes.html">
+                <li><i class="fa fa-address-book"></i>Clientes</li>
+            </a>
+            <a href="productos.html">
+                <li class="activo"><i class="fa fa-cube"></i>Productos</li>
+            </a>
+            <a href="usuarios.html">
+                <li><i class="fa fa-users"></i>Usuarios</li>
+            </a>
+            <a href="proveedores.html">
+                <li><i class="fa fa-truck"></i>Proveedores</li>
+            </a>
+            <a href="categorias.html">
+                <li><i class="fa fa-tags"></i>Categorías</li>
+            </a>
+            <a href="empleado.html">
+                <li><i class="fa fa-id-badge"></i>Empleado</li>
+             </a>
+            <a href="compras.html">
+                <li><i class="fa fa-shopping-basket"></i>Compras</li>
+            </a>
+            <a href="ventas.html">
+                <li><i class="fa fa-credit-card"></i>Ventas</li>
+            </a>
+            <a href="login.html">
+                <li><i class="fa fa-sign-out"></i>Cerrar sesión</li>
+            </a>
+        </ul>
+    </nav>
+
+    <div class="contenido">
+        <div class="barra-user">
+            <div class="user-info">
+                <p>Juanito2014</p>
+                <i class="fa fa-user-circle-o" id="icono-usuario-activo"></i>
+            </div>
+        </div>
+        <div class="parte-superior">
+            <a href="productos.html" class="btn-regresar">
+                <i class="fa fa-arrow-left"></i>
+            </a>
+        </div>
+        <h1>Registro producto</h1>
+        <form action="#" method="post">
+            <div class="campos-registro">
+                <label for="nombre-producto">Nombre del producto:</label>
+                <input type="text" id="nombre-producto" name="nombre-producto" required>
+                <br>
+                <label for="material">Material:</label>
+                <select name="material" id="material" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="oro">Oro</option>
+                    <option value="plata">Plata</option>
+                    <option value="cobre">Cobre</option>
+                    <option value="oro-laminado">Oro laminado</option>
+                    <option value="acero">Acero inóxibale</option>
+                    <option value="cristal">Cristal</option>
+                </select> <br>
+                <label for="precio">Precio: </label>
+                <input type="number" id="precio" name="precio" required>
+
+                <label for="stock-minimo">Stock Mínimo:</label>
+                <input type="number" id="stock-minimo" name="stock-minimo" min="0" required> <br>
+    
+                <label for="existencias">Existencias:</label>
+                <input type="number" id="existencias" name="existencias" min="0" required>
+    
+                <label for="categoria">Categoria:</label>
+                <select name="categoria" id="categoria" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="oro">Anillo</option>
+                    <option value="plata">Collar</option>
+                </select> <br>
+
+                <button type="submit" class="guardar" id="guardar">Guardar</button>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>

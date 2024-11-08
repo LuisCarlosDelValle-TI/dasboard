@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de nuevo cliente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="index.html">
+                <li><i class="fa fa-home"></i>Inicio</li>
+            </a>
+            <a href="clientes.html">
+                <li  class="activo"><i class="fa fa-address-book"></i>Clientes</li>
+            </a>
+            <a href="productos.html">
+                <li><i class="fa fa-cube"></i>Productos</li>
+            </a>
+            <a href="usuarios.html">
+                <li><i class="fa fa-users"></i>Usuarios</li>
+            </a>
+            <a href="proveedores.html">
+                <li><i class="fa fa-truck"></i>Proveedores</li>
+            </a>
+            <a href="categorias.html">
+                <li><i class="fa fa-tags"></i>Categorías</li>
+            </a>
+            <a href="empleado.html">
+                <li><i class="fa fa-id-badge"></i>Empleado</li>
+            </a>
+            <a href="compras.html">
+                <li><i class="fa fa-shopping-basket"></i>Compras</li>
+            </a>
+            <a href="ventas.html">
+                <li><i class="fa fa-credit-card"></i>Ventas</li>
+            </a>
+            <a href="login.html">
+                <li><i class="fa fa-sign-out"></i>Cerrar sesión</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="contenido">
+        <div class="barra-user">
+            <div class="user-info">
+                <p>Juanito2014</p>
+                <i class="fa fa-user-circle-o" id="icono-usuario-activo"></i>
+            </div>
+        </div>
+        <div class="parte-superior">
+            <a href="clientes.html" class="btn-regresar">
+                <i class="fa fa-arrow-left"></i>
+            </a>
+        </div>
+        <h1>Registro cliente</h1>
+        <form action="#" method="post">
+            <div class="campos-registro">
+                <label for="nombre-cliente">Nombre:</label>
+                <input type="text" id="nombre-cliente" name="nombre-cliente" maxlength="40" required>
+                <br>
+                <label for="apelllido-paterno">Apellido paterno:</label>
+                <input type="text" id="apelllido-paterno" name="apelllido-paterno" maxlength="40" required>
+                <br>
+                <label for="apellido-materno">Apellido materno:</label>
+                <input type="text" id="apellido-materno" name="apellido-materno" maxlength="40" required>
+                <br>
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono" maxlength="10" pattern="[0-9]{10}" required
+                       placeholder="10 dígitos">
+                <br>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" maxlength="40" required>
+                <br>
+                <label for="pais">Páis:</label>
+                <input type="text" id="pais" name="pais" maxlength="40" required>
+                <br>
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" maxlength="40" required>
+                <br>
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" maxlength="40" required>
+                <br>
+                <label for="cp">Código postal:</label>
+                <input type="number" id="cp" name="cp" maxlength="40" required>
+                <br>
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                <br>
+                <button type="submit" class="guardar" id="guardar">Guardar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
