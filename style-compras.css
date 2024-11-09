@@ -128,17 +128,33 @@ input {
     border: 1px solid #ddd;
     border-radius: 8px;
     margin-left: 50px;
-    
+}
+
+.campo-total-derecha .campo-subtotal,
+.campo-total-derecha .campo-descuento,
+.campo-total-derecha .campo-total,
+.campo-total-derecha .campo-metodo-pago,
+.campo-total-derecha .campo-nota {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.campo-total-derecha label {
+    margin-right: 10px;
+    font-weight: bold;
+    width: 150px; /* Ajusta este valor según sea necesario */
 }
 
 .campo-total-derecha input,
 .campo-total-derecha select,
 .campo-total-derecha textarea {
-    margin-left: 35px;
-    width: 75%;
+    width: calc(100% - 160px); /* Ajusta este valor según sea necesario */
     padding: 10px;
     border-radius: 4px;
     border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
 
